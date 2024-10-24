@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: blue;
+    }
+
+    h2 {
+      background-color: black;
+      color: rgb(211, 71, 71);
+    }
+  </style>
+  <body>
+    <h2>JavaScript Error Handling</h2>
+
+    <p>
+      This example demonstrates how to use <b>catch</b> to display an error.
+    </p>
+    <p id="error_message"></p>
+    <p id="msg"></p>
+
+    <script>
+      try {
+        nonexist("Welcome guest!");
+      } catch (err) {
+        document.getElementById("error_message").innerHTML = err.message;
+      }
+
+      document.getElementById("msg").innerHTML = "Niloy";
+    </script>
+  </body>
+</html>
